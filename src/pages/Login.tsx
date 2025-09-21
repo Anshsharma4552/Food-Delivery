@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { useToast } from '@/hooks/use-toast';
 import { Phone, User, Lock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { sendOtp, verifyOtp } from '@/lib/helper';
 
 const Login = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -101,7 +102,10 @@ const Login = () => {
                     Signing In...
                   </div>
                 ) : (
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2" onClick={async () => {
+                    console.log("Continue with Phone clicked");
+                    await sendOtp(phoneNumber);
+                  }}>
                     <Lock className="w-4 h-4" />
                     Continue with Phone
                   </div>
@@ -117,7 +121,7 @@ const Login = () => {
                 </div>
                 <div className="relative flex justify-center text-xs uppercase">
                   <span className="bg-card px-2 text-muted-foreground">
-                    New to FoodieExpress?
+                    New to BiteBuddy?
                   </span>
                 </div>
               </div>
