@@ -17,9 +17,9 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gradient-hero">
-            <span className="text-sm font-bold text-white">BB</span>
+            <span className="text-sm font-bold text-white">CB</span>
           </div>
-          <span className="text-lg font-semibold">BiteBuddy</span>
+          <span className="text-lg font-semibold">CampusBites</span>
         </Link>
 
         <nav className="flex items-center space-x-1">
@@ -62,8 +62,8 @@ const Header = () => {
           <Link
             to="/login"
             className={cn(
-              buttonVariants({ variant: "outline", size: "sm" }),
-              "ml-2 hover-scale",
+              buttonVariants({ variant: "ghost", size: "sm" }),
+              "relative",
               isActive("/login") && "bg-accent"
             )}
           >
