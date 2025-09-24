@@ -19,10 +19,10 @@ const Home = () => {
 
       {/* 🔥 Moving Banner Section */}
       <div className="w-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-3 overflow-hidden relative">
-        <div className="animate-marquee whitespace-nowrap flex gap-12 text-lg font-semibold px-10">
-          <span>🔥 Free Delivery on All Orders Today!</span>
-          <span>🎉 Flat 20% Student Discount Available</span>
-          <span>🍔 Fresh Meals, Delivered to Your Dorm</span>
+        <div className="animate-marquee whitespace-nowrap flex gap-12 text-lg font-semibold px-14">
+          <span>🔥Free Delivery on All Orders Today!</span>
+          <span>Flat 20% Student Discount Available</span>
+          <span>Fresh Meals, Delivered to Your Dorm</span>
           <span>⚡ Order Now & Get ₹50 Cashback</span>
         </div>
       </div>
@@ -116,8 +116,8 @@ const Home = () => {
           <div className="grid gap-12 md:grid-cols-4 lg:grid-cols-4">
             {/* Fast Delivery */}
             <div className="text-center space-y-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 shadow-lg animate-bounce-gentle">
-                <Clock className="h-10 w-10 text-white" />
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 shadow">
+                <Clock className="h-10 w-10 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Fast Delivery</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -127,8 +127,8 @@ const Home = () => {
 
             {/* Fresh & Tasty */}
             <div className="text-center space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-tr from-green-400 via-yellow-400 to-orange-400 shadow-lg animate-bounce-gentle">
-                <Utensils className="h-10 w-10 text-white" />
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 shadow">
+                <Utensils className="h-10 w-10 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Fresh & Tasty</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -138,8 +138,8 @@ const Home = () => {
 
             {/* Dorm Delivery */}
             <div className="text-center space-y-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 via-teal-400 to-cyan-500 shadow-lg animate-bounce-gentle">
-                <MapPin className="h-10 w-10 text-white" />
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 shadow">
+                <MapPin className="h-10 w-10 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Dorm Delivery</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -149,8 +149,8 @@ const Home = () => {
 
             {/* Affordable Prices */}
             <div className="text-center space-y-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-tr from-yellow-400 via-orange-500 to-red-500 shadow-lg animate-bounce-gentle">
-                <span className="text-white text-2xl font-bold">₹</span>
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 shadow">
+                <span className="text-primary text-2xl font-bold">₹</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Affordable Prices</h3>
               <p className="text-gray-600 dark:text-gray-300">

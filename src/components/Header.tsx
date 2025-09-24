@@ -60,6 +60,15 @@ const Header = () => {
             )}
           </Link>
           <Link
+            to="/admin"
+            className={cn(
+              buttonVariants({ variant: "ghost", size: "sm" }),
+              isActive("/admin") && "bg-accent"
+            )}
+          >
+            Admin Panel
+          </Link>
+          <Link
             to="/login"
             className={cn(
               buttonVariants({ variant: "ghost", size: "sm" }),
